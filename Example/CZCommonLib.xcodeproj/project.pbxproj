@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		293D751021C0F71300A02AA4 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 293D750E21C0F6C200A02AA4 /* libWeChatSDK.a */; };
 		4942CFB6C3A9E2394F60C7F2 /* Pods_CZCommonLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C446A4DE597318A882482F /* Pods_CZCommonLib_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 		0553EEDD35C2CAB1A9A95A32 /* Pods-CZCommonLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZCommonLib_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CZCommonLib_Tests/Pods-CZCommonLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		09BBC02F0345AC37C27A3B4E /* Pods-CZCommonLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZCommonLib_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CZCommonLib_Example/Pods-CZCommonLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		13C228ABFB95EEB4336FA68D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		293D750C21C0F32500A02AA4 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		293D750E21C0F6C200A02AA4 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Pods/WechatOpenSDK/WeChatSDK1.8.3/libWeChatSDK.a; sourceTree = "<group>"; };
 		35E7048CD02E12A63959541E /* Pods_CZCommonLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CZCommonLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* CZCommonLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZCommonLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293D751021C0F71300A02AA4 /* libWeChatSDK.a in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -119,6 +123,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				293D750E21C0F6C200A02AA4 /* libWeChatSDK.a */,
+				293D750C21C0F32500A02AA4 /* DZNEmptyDataSet.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -333,6 +339,7 @@
 				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/BANetManager/BANetManager.framework",
 				"${BUILT_PRODUCTS_DIR}/CZCommonLib/CZCommonLib.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
@@ -349,6 +356,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BANetManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CZCommonLib.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
@@ -520,6 +528,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09BBC02F0345AC37C27A3B4E /* Pods-CZCommonLib_Example.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7S46JX7Q8W;
@@ -527,11 +539,59 @@
 				GCC_PREFIX_HEADER = "CZCommonLib/CZCommonLib-Prefix.pch";
 				INFOPLIST_FILE = "CZCommonLib/CZCommonLib-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/WechatOpenSDK",
+				);
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"ActionSheetPicker_3_0\"",
+					"-framework",
+					"\"BANetManager\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CZCommonLib\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"DZNEmptyDataSet\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Toast\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"YYCache\"",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yonyou.carowner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = yyouCarOwnerDevelopment;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				VALID_ARCHS = "armv7 armv7s arm64 arm64e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -540,6 +600,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61E04B0DB6C00BF460776CE7 /* Pods-CZCommonLib_Example.release.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7S46JX7Q8W;
@@ -547,11 +611,59 @@
 				GCC_PREFIX_HEADER = "CZCommonLib/CZCommonLib-Prefix.pch";
 				INFOPLIST_FILE = "CZCommonLib/CZCommonLib-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/WechatOpenSDK",
+				);
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"ActionSheetPicker_3_0\"",
+					"-framework",
+					"\"BANetManager\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CZCommonLib\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"DZNEmptyDataSet\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Toast\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"YYCache\"",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yonyou.carowner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = yyouCarOwnerDevelopment;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				VALID_ARCHS = "armv7 armv7s arm64 arm64e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

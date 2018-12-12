@@ -1,9 +1,9 @@
 {
   "name": "CZCommonLib",
-  "version": "0.1.0",
-  "summary": "A short description of CZCommonLib.",
+  "version": "1.0.0",
+  "summary": "公用工具组件化",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/sweetlyGit/CZCommonLib",
+  "homepage": "https://github.com/sweetlyGit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "sweetlyGit": "2235861673@qq.com"
   },
   "source": {
-    "git": "https://github.com/sweetlyGit/CZCommonLib.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/sweetlyGit/YYOUCarOWnerAPP.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "9.0"
