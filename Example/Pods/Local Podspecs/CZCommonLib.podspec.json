@@ -1,0 +1,56 @@
+{
+  "name": "CZCommonLib",
+  "version": "0.1.0",
+  "summary": "A short description of CZCommonLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sweetlyGit/CZCommonLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sweetlyGit": "2235861673@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/sweetlyGit/CZCommonLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CZCommonLib/Classes/**/*",
+  "resource_bundles": {
+    "CZCommonLibBundle": [
+      "CZCommonLib/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.2.1"
+    ],
+    "Reachability": [
+      "~> 3.2"
+    ],
+    "ActionSheetPicker-3.0": [
+      "~> 2.3.0"
+    ],
+    "Toast": [
+      "~> 4.0.0"
+    ],
+    "MBProgressHUD": [
+      "~> 1.1.0"
+    ],
+    "BANetManager": [
+      "~> 2.3.10"
+    ],
+    "MJRefresh": [
+      "~> 3.1.15.3"
+    ],
+    "SDWebImage": [
+      "~> 4.4.0"
+    ],
+    "Masonry": [
+      "~> 1.1.0"
+    ]
+  }
+}
