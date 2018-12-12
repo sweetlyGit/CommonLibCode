@@ -22,6 +22,7 @@ PODS:
     - ActionSheetPicker-3.0 (~> 2.3.0)
     - AFNetworking (~> 3.2.1)
     - BANetManager (~> 2.3.10)
+    - DZNEmptyDataSet (~> 1.8.1)
     - Masonry (~> 1.1.0)
     - MBProgressHUD (~> 1.1.0)
     - MJRefresh (~> 3.1.15.3)
@@ -42,7 +43,6 @@ PODS:
 
 DEPENDENCIES:
   - CZCommonLib (from `../`)
-  - DZNEmptyDataSet (~> 1.8.1)
   - WechatOpenSDK (~> 1.8.3)
 
 SPEC REPOS:
@@ -68,7 +68,7 @@ SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BANetManager: b64cf57ee32b0d576f8bd3dd6745d86d1a1e43f2
-  CZCommonLib: 55cd3740f263a3c1f4c3d014b5d258bdb68b09ed
+  CZCommonLib: aaa7f16e4f9e80b3ec1d632c1e1172a966a96137
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
@@ -79,6 +79,6 @@ SPEC CHECKSUMS:
   WechatOpenSDK: 3117412f8aafde4758cac1e8d20b93c67cafcfef
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: f160aba4683623a224957374cc1adf177d008e50
+PODFILE CHECKSUM: 4a11523b8be355510f53b66493e77ff3aa475db5
 
 COCOAPODS: 1.5.3

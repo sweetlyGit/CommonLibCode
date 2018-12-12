@@ -28,6 +28,9 @@
     "AFNetworking": [
       "~> 3.2.1"
     ],
+    "DZNEmptyDataSet": [
+      "~> 1.8.1"
+    ],
     "Reachability": [
       "~> 3.2"
     ],
@@ -51,6 +54,9 @@
     ],
     "Masonry": [
       "~> 1.1.0"
+    ],
+    "WechatOpenSDK": [
+      "~> 1.8.3"
     ]
   }
 }
