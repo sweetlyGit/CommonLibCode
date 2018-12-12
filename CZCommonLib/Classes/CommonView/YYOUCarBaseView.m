@@ -11,7 +11,7 @@
 #import <BANetManager/BADataEntity.h>
 #import <Toast/Toast.h>
 #import "MBProgressHUD+YYOUCarMBProgress.h"
-#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+//#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 #import "UIColor+YYOUHexString.h"
 #import "NSString+YYOUCarString.h"
 #import <Reachability/Reachability.h>
@@ -19,7 +19,8 @@
 #import <MJRefresh/MJRefresh.h>
 #import "YYOUCarUIUtils.h"
 #import "UIImage+YYOUCarImage.h"
-@interface YYOUCarBaseView()<UITableViewDelegate,UITableViewDataSource,DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
+//@interface YYOUCarBaseView()<UITableViewDelegate,UITableViewDataSource,DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
+@interface YYOUCarBaseView()<UITableViewDelegate,UITableViewDataSource>
 @end
 @implementation YYOUCarBaseView
 -(id)initWithFrame:(CGRect)frame{
@@ -35,8 +36,8 @@
         _listTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width,self.frame.size.height) style:UITableViewStylePlain];
         _listTable.dataSource = self;
         _listTable.delegate = self;
-        _listTable.emptyDataSetSource = self;
-        _listTable.emptyDataSetDelegate = self;
+//        _listTable.emptyDataSetSource = self;
+//        _listTable.emptyDataSetDelegate = self;
         _listTable.separatorStyle = UITableViewCellSelectionStyleNone;
         _listTable.showsVerticalScrollIndicator = NO;
         _listTable.estimatedRowHeight = 100;

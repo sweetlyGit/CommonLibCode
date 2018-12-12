@@ -41,6 +41,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 3.2.1'
   s.dependency 'AFNetworking', '~> 3.2.1'
+  s.dependency 'DZNEmptyDataSet', '~> 1.8.1'
   s.dependency 'Reachability', '~> 3.2'
   s.dependency 'ActionSheetPicker-3.0', '~> 2.3.0'
   s.dependency 'Toast', '~> 4.0.0'
@@ -49,4 +50,6 @@ TODO: Add long description of the pod here.
   s.dependency 'MJRefresh', '~> 3.1.15.3'
   s.dependency 'SDWebImage', '~> 4.4.0'
   s.dependency 'Masonry', '~> 1.1.0'
+  s.dependency 'WechatOpenSDK', '~> 1.8.3'
+
 end

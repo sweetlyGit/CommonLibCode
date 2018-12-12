@@ -9,6 +9,7 @@
 #import "YYOUCarShareManager.h"
 #import "NSString+YYOUCarString.h"
 #import "WXApi.h"
+
 static YYOUCarShareManager * shareManager = nil;
 
 @implementation YYOUCarShareManager
