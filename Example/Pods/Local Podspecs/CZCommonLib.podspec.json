@@ -12,7 +12,7 @@
     "sweetlyGit": "2235861673@qq.com"
   },
   "source": {
-    "git": "https://github.com/sweetlyGit/YYOUCarOWnerAPP.git",
+    "git": "https://github.com/sweetlyGit/CommonSpec.git",
     "tag": "1.0.0"
   },
   "platforms": {
@@ -20,7 +20,7 @@
   },
   "source_files": "CZCommonLib/Classes/**/*",
   "resource_bundles": {
-    "CZCommonLibBundle": [
+    "CZCommonLib": [
       "CZCommonLib/Assets/*.png"
     ]
   },
