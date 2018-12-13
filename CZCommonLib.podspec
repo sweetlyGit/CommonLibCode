@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sweetlyGit' => '2235861673@qq.com' }
-  s.source           = { :git => 'https://github.com/sweetlyGit/CommonSpec.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/sweetlyGit/CommonLibCode.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '9.0'
 
@@ -35,17 +35,17 @@ TODO: Add long description of the pod here.
   #}
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 3.2.1'
-  s.dependency 'AFNetworking', '~> 3.2.1'
-  s.dependency 'DZNEmptyDataSet', '~> 1.8.1'
-  s.dependency 'Reachability', '~> 3.2'
-  s.dependency 'ActionSheetPicker-3.0', '~> 2.3.0'
-  s.dependency 'Toast', '~> 4.0.0'
-  s.dependency 'MBProgressHUD', '~> 1.1.0'
-  s.dependency 'BANetManager', '~> 2.3.10'
-  s.dependency 'MJRefresh', '~> 3.1.15.3'
-  s.dependency 'SDWebImage', '~> 4.4.0'
-  s.dependency 'Masonry', '~> 1.1.0'
-  s.dependency 'WechatOpenSDK', '~> 1.8.3'
+   s.dependency 'AFNetworking', '~> 3.2.1'
+   s.dependency 'AFNetworking', '~> 3.2.1'
+   s.dependency 'DZNEmptyDataSet', '~> 1.8.1'
+   s.dependency 'Reachability', '~> 3.2'
+   s.dependency 'ActionSheetPicker-3.0', '~> 2.3.0'
+   s.dependency 'Toast', '~> 4.0.0'
+   s.dependency 'MBProgressHUD', '~> 1.1.0'
+   s.dependency 'BANetManager', '~> 2.3.10'
+   s.dependency 'MJRefresh', '~> 3.1.15.3'
+   s.dependency 'SDWebImage', '~> 4.4.0'
+   s.dependency 'Masonry', '~> 1.1.0'
+   s.dependency 'WechatOpenSDK', '~> 1.8.3'
 
 end
