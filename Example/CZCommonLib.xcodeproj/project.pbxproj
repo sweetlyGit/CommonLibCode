@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		293D751021C0F71300A02AA4 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 293D750E21C0F6C200A02AA4 /* libWeChatSDK.a */; };
 		4942CFB6C3A9E2394F60C7F2 /* Pods_CZCommonLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C446A4DE597318A882482F /* Pods_CZCommonLib_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -77,7 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				293D751021C0F71300A02AA4 /* libWeChatSDK.a in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -539,10 +537,7 @@
 				GCC_PREFIX_HEADER = "CZCommonLib/CZCommonLib-Prefix.pch";
 				INFOPLIST_FILE = "CZCommonLib/CZCommonLib-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/WechatOpenSDK",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -611,10 +606,7 @@
 				GCC_PREFIX_HEADER = "CZCommonLib/CZCommonLib-Prefix.pch";
 				INFOPLIST_FILE = "CZCommonLib/CZCommonLib-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/WechatOpenSDK",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
